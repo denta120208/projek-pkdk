@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1 {
+            font-size: 6em;
+            font-family: 'Poppins', sans-serif;
+        }
+        p {
+            font-size: medium;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1em;
+        }
+        .date-container {
+            position: relative;
+            display: inline-block;
+        }
+        .date-container input[type="date"] {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 5px;
+            z-index: 1000;
+        }
+        #toggleDateInput {
+            border-radius: 8px;
+            width: 120px;
+            height: 31px;
+            position: absolute;
+            background-color: hsla(300, 0%, 55%, 0.611);
+            color: white;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-align: left;
+            line-height: 31px;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            bottom: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="position: absolute; right: 350px; bottom: 175px;">Step 1</h1>
+    <p style="opacity: 40%; font-size: small; position: absolute; right: 325px; bottom: 260px;">1/3</p>
+    <p style="position: absolute; right: 350px; bottom: 215px;">Umur kamu berapa yaw?</p>
+    <div class="date-container">
+        <button style="border-radius: 8px; width: 180px; height: 31px; position: absolute; bottom: -285px; left: 250px;" id="toggleDateInput">Tgl.lahir</button>
+        <input style="border-radius: 8px; width: 180px; height: 31px; position: absolute; bottom: 285px; left: 130px;" type="date" id="dateInput">
+    </div>
+    <a href="login2.html">
+        <img style="width: 50px; height: 30px; position: absolute; bottom: 100px; right: 150px; transform: rotate(90deg);" src="png-transparent-triangle-blue-triangle-blue-angle-triangle-removebg-preview.png" alt="">
+    </a>
+    <a href="index.html">
+        <img style="width: 50px; height: 30px; position: absolute; bottom: 100px; right: 1050px; transform: rotate(-90deg);" src="download-removebg-preview (2).png" alt="">
+    </a>
+    <script src="date.js"></script>
+</body>
+</html>

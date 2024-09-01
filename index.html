@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  background: #D9D9D9;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 9px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 10px;
+  position: absolute;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: scale(0.9);
+}
+
+.daftar {
+  background-color: #3498db;
+  color: white;
+  border-radius: 80px;
+  width: 70px;
+  right: 20px;
+  top: 30px;
+  animation-name: zoomInDaftar;
+  text-align: center;
+  text-decoration: none;
+  height: 20px;
+}
+
+.masuk {
+  background-color: #9b59b6;
+  color: white;
+  border-radius: 140px;
+  width: 70px;
+  top: 30px;
+  right: 140px;
+  animation-name: zoomInMasuk;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  height: 20px;
+}
+
+@keyframes zoomInDaftar {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomInMasuk {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.selamat {
+  right: 250px;
+  animation-name: slideInSelamat;
+  font-size: 4em;
+}
+
+.datang {
+  bottom: 125px;
+  right: 360px;
+  animation-name: slideInDatang;
+  font-size: 4em;
+}
+
+@keyframes slideInSelamat {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 900px;
+    opacity: 1;
+    bottom: 300px;
+  }
+}
+
+@keyframes slideInDatang {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 770px;
+    opacity: 1;
+    top: 200px;
+  }
+}
+
+.containerr {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.animated-image {
+  position: absolute;
+  right: 250px;
+  bottom: 150px;
+  height: 300px;
+  width: 300px;
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    bottom: 100%;
+    opacity: 0;
+  }
+  to {
+    bottom: 150px;
+    opacity: 1;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="button-container">
+    <a href="log.html" class="button masuk">Daftar</a>
+    <a href="log murid.html" class="button daftar">Masuk</a>
+  </div>
+</div>
+<h1 class="selamat">Selamat</h1>
+<h1 class="datang">Datang</h1>
+<div class="container">
+  <img class="animated-image" src="download-removebg-preview.png" alt="Gambar">
+</div>
+</body>
+</html>

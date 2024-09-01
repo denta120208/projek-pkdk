@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    background-color: #9111e6;
+    padding: 60px;
+    width: 1000px;
+    border-radius: 60px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 450px;
+   
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #1e1d31;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+  input[type="submit"] {
+    background-color: #0073ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+   
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0073ff;
+  }
+
+  .form-container {
+    border-radius: 60px;
+    padding: 30px;
+    margin-bottom: 15px;
+    
+  }
+
+  .form-container input {
+    border-radius: 60px;
+    padding: 10px;
+    margin-bottom: 40px;
+    width: 100%; /* Full width within the flex container */
+    height: 42px;
+    box-sizing: border-box;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping if the screen is too small */
+  }
+
+  .form-row .input-group {
+    width: 48%; /* Adjust to control the space between inputs */
+  }
+
+  .form-row.full-width {
+    width: 100%;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+  }
+
+  .container h1 {
+    margin-top: 0;
+    padding-top: 0;
+    color: white;
+  }
+  h1{
+    font-family: 'Poppins', sans-serif;
+  }
+  p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    position: absolute;
+    left: 150px;
+    top: 260px;
+    color: white;
+    
+    
+  }
+ 
+ a {
+  text-decoration: none;
+}
+
+/* Apply no-underline class */
+.no-underline {
+  text-decoration: none;
+}
+.submit{
+  width: 20%;
+  position: absolute;
+  right: 70px;
+}

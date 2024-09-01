@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1 {
+            font-size:4em;
+            font-family: 'Poppins', sans-serif;
+        }
+        p {
+            font-size: medium;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+      
+          
+          h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+          }
+          
+          .button-container {
+            margin-top: 20px;
+          }
+          
+          .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 0 10px;
+            position: absolute;
+            opacity: 0;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            transform: scale(0.9);
+          }
+          
+          .daftar {
+            background-color: #3498db;
+            color: white;
+            border-radius: 80px;
+            width: 110px;
+            bottom: 160px; 
+            right: 510px;
+            animation-name: zoomInDaftar;
+            text-align: center;
+            text-decoration: none;
+            height: 20px;
+          }
+          
+          .masuk {
+            background-color: #9b59b6;
+            color: white;
+            border-radius: 140px;
+            width: 110px;
+            bottom: 110px; 
+            right: 510px;
+            animation-name: zoomInMasuk;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            height: 20px;
+          }
+          
+          @keyframes zoomInDaftar {
+            0% {
+              opacity: 0;
+              transform: scale(0.9);
+            }
+            100% {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
+          
+          @keyframes zoomInMasuk {
+            0% {
+              opacity: 0;
+              transform: scale(0.9);
+            }
+            100% {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
+          .main-image {
+            position: absolute;
+            bottom: 180px;
+            right: 485px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .main-image {
+            position: absolute;
+            bottom: 180px;
+            right: 485px;
+            animation: bounce 2s infinite;
+        }
+        
+        
+</style>
+<body>
+    <h1 style="position:absolute; bottom: 350px;right: 420px;"> Daftar Sebagai</h1>
+    <img class="main-image" src="download-removebg-preview.png" alt="">
+    <div class="container">
+        <div class="button-container">
+          <a href="gurulog.html" class="button masuk">Guru</a>
+          <a href="login1.html" class="button daftar">Siswa</a>
+        </div>
+    <a href="index.html">
+        
+        <img style="width: 50px; height: 30px; position: absolute; bottom: 50px; right: 1020px; transform: rotate(-90deg);" src="download-removebg-preview (2).png" alt="">
+        <img style="width: 50px; height: 30px; position: absolute; bottom: 50px; right: 1000px; transform: rotate(-90deg);" src="download-removebg-preview (2).png" alt="">
+    </a>
+      
+</body>
+</html>
